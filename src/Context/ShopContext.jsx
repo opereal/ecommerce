@@ -24,12 +24,12 @@ const addToCart = (itemId) => {
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
 }
 
-const removeToCart = (itemId) => {
+const removeFromCart = (itemId) => {
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
 
 }
 
-    const contextValue = {all_product,cartItems,addToCart,removeToCart};
+    const contextValue = {all_product,cartItems,addToCart,removeFromCart};
     
     return(
 
